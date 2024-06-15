@@ -18,9 +18,7 @@ export default async function RootLayout({children,}: Readonly<{children: React.
   // console.log(data.navigation)
   return (
       <div className={inter.className}>
-          <Navbar image={data.logo} navItems={data.navigation}/>
           {children}
-          <Footer image={data.logo} />
       </div>
   );
 }

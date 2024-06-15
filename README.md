@@ -13,8 +13,9 @@
     - `git add .` 
     - `git commit -m "Initial commit"`
     - `gh repo create YOUR_NEW_REPO_NAME --private --source=. --remote=origin`
-    - `git remote add origin https://github.com/your_github_username/new.git`
-    - `git branch -M main`
-    - `git push -u origin main`
+    - ```git remote add origin https://github.com/your_github_username/your_repo_name.git 
+git branch -M main
+git push -u origin main
+```
 
 6. Start coding

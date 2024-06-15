@@ -14,9 +14,9 @@ export default async function AboutPage() {
             <section className='md:grid grid-cols-5'>
                 <div className='col-span-3 md:pr-36'>
                     <h1 className='text-2xl md:text-3xl font-bold'>Who am I?</h1>
-                    <PortableText value={body} components={RichTextComponent} />
+                    {/* <PortableText value={body} components={RichTextComponent} /> */}
+                    Portable text
                 </div>
-                <div className='w-full aspect-square rounded-3xl bg-cover bg-center col-span-2' style={{ backgroundImage: `url(${urlForImage(image)})`}} />
             </section>
         </main>
     )
