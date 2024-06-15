@@ -13,7 +13,8 @@
     - `git add .` 
     - `git commit -m "Initial commit"`
     - `gh repo create YOUR_NEW_REPO_NAME --private --source=. --remote=origin`
-```git remote add origin https://github.com/your_github_username/your_repo_name.git 
+```
+git remote add origin https://github.com/your_github_username/your_repo_name.git 
 git branch -M main
 git push -u origin main
 ```
