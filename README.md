@@ -8,11 +8,21 @@
     - if you want to use the schemas I've made you can keep them if not override the schema file(s)
 4. Run the next app to make sure its working `yarn dev` or `npm run dev`  
 5. Remove the git history and set up the new git repo
-    - `rm -rf .git`
-    - `git init`
-    - `git add .` 
-    - `git commit -m "Initial commit"`
-    - `gh repo create YOUR_NEW_REPO_NAME --private --source=. --remote=origin`
+```
+rm -rf .git
+```
+```
+git init
+```
+```
+git add .
+``` 
+```
+git commit -m "Initial commit"
+```
+```
+gh repo create YOUR_NEW_REPO_NAME --private --source=. --remote=origin
+```
 ```
 git remote add origin https://github.com/your_github_username/your_repo_name.git 
 git branch -M main
