@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { client } from "@/sanity/lib/client";
 import { settingsQuery } from "@/sanity/lib/queries";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,8 +18,21 @@ export default async function RootLayout({children,}: Readonly<{children: React.
   const data = await client.fetch(settingsQuery);
   // console.log(data.navigation)
   return (
-      <div className={inter.className}>
-          {children}
-      </div>
+    <main className={`${inter.className} bg-white dark:bg-zinc-900 dark:text-white min-h-screen`}>
+      <nav className="px-4 py-2">
+        <ul className="flex gap-6">
+          <li>
+            <Link href={'/'}>Home</Link>
+          </li>
+          <li>
+            <Link href={'/about'}>About</Link>
+          </li>
+          <li>
+            <Link href={'/contact'}>Contact</Link>
+          </li>
+        </ul>
+      </nav>
+      {children}
+    </main>
   );
 }

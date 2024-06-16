@@ -39,7 +39,7 @@ export default function ContactForm() {
     }
 
     return (
-        <div className='bg-white rounded-xl p-4'>
+        <div className='dark:bg-zinc-700 rounded-xl p-4'>
             <h2 className='text-2xl md:text-5xl'>Get in Touch</h2>
             <form className='mt-4 space-y-4'>
                 Form

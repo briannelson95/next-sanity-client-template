@@ -14,7 +14,7 @@ const singletonTypes = new Set(["homepage"])
 
 export default defineConfig({
   basePath: '/admin',
-  title: "Heather's Tutoring",
+  title: "YOUR SANITY STUDIO",
   projectId,
   dataset,
   schema,

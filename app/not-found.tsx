@@ -8,8 +8,8 @@ import Link from 'next/link'
 export default async function NotFound() {
     const data = await client.fetch(settingsQuery);
     return (
-        <main>
-            <div className='bg-gray-300 min-h-screen px-16 py-6 space-y-2'>
+        <main className='bg-white dark:bg-zinc-900 dark:text-white min-h-screen'>
+            <div className='px-16 py-6 space-y-2'>
                 <h2 className='text-3xl font-bold'>Page Not Found</h2>
                 <p>Could not find requested resource</p>
                 <Link href="/" className='flex gap-2 items-center hover:underline'>
